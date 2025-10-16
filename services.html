@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O'Building Group — Services</title>
+  <meta name="description"
+    content="Services O'Building Group — Construction, architecture, suivi de chantier, promotion immobilière." />
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">O'B</div>
+        <div class="brand-text"><strong>O'Building Group</strong><span class="muted">BTP • Immobilier</span></div>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+        <button id="burger2" class="burger" aria-label="Ouvrir le menu"
+          aria-expanded="false"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+    <div id="mobileMenu2" class="mobile-menu" hidden>
+      <a href="index.html">Accueil</a><a href="services.html">Services</a><a href="realisations.html">Réalisations</a><a
+        href="equipe.html">Équipe</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero-small">
+      <div class="container">
+        <h1>Nos activités & services</h1>
+        <p class="muted">Détails de chaque service, méthodologie et livrables.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="service-detail card appear" data-anim="slide-up">
+        <h3>Construction & Réalisation</h3>
+        <p class="muted">Exécution complète de projets résidentiels, commerciaux et industriels — plans,
+          approvisionnement, exécution, réception.</p>
+        <ul class="bullets">
+          <li>Gestion complète du chantier</li>
+          <li>Contrôle qualité et sécurité</li>
+          <li>Livraison clé en main</li>
+        </ul>
+      </div>
+
+      <div class="service-detail card appear" data-anim="slide-up" data-delay="80">
+        <h3>Architecture & Études</h3>
+        <p class="muted">Conception architecturale, plans d’exécution, modélisation 3D, études thermiques et
+          structurelles.</p>
+      </div>
+
+      <div class="service-detail card appear" data-anim="slide-up" data-delay="160">
+        <h3>Suivi & Gestion de Chantier</h3>
+        <p class="muted">Coordination, planning, supervision qualité et sécurité, reporting client régulier.</p>
+      </div>
+
+      <div class="service-detail card appear" data-anim="slide-up" data-delay="240">
+        <h3>Promotion Immobilière</h3>
+        <p class="muted">Études de marché, montage financier, commercialisation et gestion des ventes.</p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h3>Notre méthodologie</h3>
+        <ol class="timeline">
+          <li><strong>Étude & conception</strong><span class="muted">Brief, esquisses, études de faisabilité</span></li>
+          <li><strong>Planification</strong><span class="muted">Budget, planning, approvisionnement</span></li>
+          <li><strong>Exécution</strong><span class="muted">Pilotage du chantier et contrôle qualité</span></li>
+          <li><strong>Livraison</strong><span class="muted">Réception, garanties et SAV</span></li>
+        </ol>
+
+        <div class="cta-row">
+          <a class="btn primary" href="contact.html">Parler à un chef de projet</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <div class="logo-sm">O'B</div>
+        <div class="muted">&copy; <span id="year2"></span> O'Building Group</div>
+      </div>
+      <div class="foot-right"><a href="contact.html">Contact</a><a href="realisations.html">Réalisations</a></div>
+    </div>
+  </footer>
+
+  <script src="./assets/app.js" defer></script>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

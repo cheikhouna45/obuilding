@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O'Building Group — Équipe</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">O'B</div>
+        <div class="brand-text"><strong>O'Building Group</strong><span class="muted">BTP • Immobilier</span></div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="equipe.html" class="active">Équipe</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+        <button id="burger4" class="burger" aria-label="Ouvrir le menu"
+          aria-expanded="false"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+    <div id="mobileMenu4" class="mobile-menu" hidden>
+      <a href="index.html">Accueil</a><a href="services.html">Services</a><a href="realisations.html">Réalisations</a><a
+        href="equipe.html">Équipe</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1>Équipe & Valeurs</h1>
+      <p class="muted">Découvrez notre équipe d'experts et notre approche.</p>
+
+      <div class="grid team-grid">
+        <div class="member card appear">
+          <div class="avatar large">AD</div>
+          <h3>M. Aliou Diop</h3>
+          <p class="muted">CEO & Ingénieur Civil — +15 ans d'expérience en gestion de projets.</p>
+        </div>
+        <div class="member card appear">
+          <div class="avatar large">AS</div>
+          <h3>Mme Awa Sène</h3>
+          <p class="muted">Architecte Principale — conception et suivi technique.</p>
+        </div>
+        <div class="member card appear">
+          <div class="avatar large">PN</div>
+          <h3>M. Pape Ndiaye</h3>
+          <p class="muted">Responsable Chantiers — coordination terrain.</p>
+        </div>
+        <div class="member card appear">
+          <div class="avatar large">HR</div>
+          <h3>Ressources Humaines</h3>
+          <p class="muted">Recrutement et formation continue.</p>
+        </div>
+      </div>
+
+      <section class="section alt card">
+        <h3>Carrières</h3>
+        <p class="muted">Nous recrutons régulièrement : chefs de chantier, conducteurs de travaux et techniciens.
+          Envoyez votre CV à <a href="mailto:contact@obuildinggroup.com">contact@obuildinggroup.com</a></p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <div class="logo-sm">O'B</div>
+        <div class="muted">&copy; <span id="year4"></span> O'Building Group</div>
+      </div>
+      <div class="foot-right"><a href="contact.html">Contact</a><a href="services.html">Services</a></div>
+    </div>
+  </footer>
+
+  <script src="./assets/app.js" defer></script>
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O'Building Group — Contact</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">O'B</div>
+        <div class="brand-text"><strong>O'Building Group</strong><span class="muted">BTP • Immobilier</span></div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html" class="active cta">Contact</a></li>
+        </ul>
+        <button id="burger5" class="burger" aria-label="Ouvrir le menu"
+          aria-expanded="false"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+    <div id="mobileMenu5" class="mobile-menu" hidden>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="equipe.html">Équipe</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1>Contactez-nous</h1>
+      <p class="muted">Remplissez le formulaire et nous vous répondrons sous 24 heures.</p>
+
+      <div class="contact-grid">
+        <form id="contactPageForm" class="card" aria-label="Formulaire de contact">
+          <label>Nom complet*</label><input type="text" id="cname" required>
+          <label>Email*</label><input type="email" id="cemail" required>
+          <label>Téléphone</label><input type="tel" id="cphone">
+          <label>Type de projet</label>
+          <select id="ctype">
+            <option>Résidentiel</option>
+            <option>Commercial</option>
+            <option>Industriel</option>
+            <option>Autre</option>
+          </select>
+          <label>Message*</label><textarea id="cmessage" required></textarea>
+
+          <div style="display:flex;gap:10px;margin-top:12px">
+            <button class="btn primary" type="submit">Envoyer</button>
+            <button class="btn ghost" type="button"
+              onclick="document.getElementById('contactPageForm').reset()">Réinitialiser</button>
+          </div>
+          <div id="cstatus" class="muted" aria-live="polite" style="margin-top:10px"></div>
+        </form>
+
+        <aside>
+          <div class="card">
+            <h4>Coordonnées</h4>
+            <p class="muted">📍 Saly, Sénégal<br>📞 <a href="tel:+221772828917">+221 76 920 43 81</a><br>📧 <a
+                href="mailto:contact@obuildinggroup.com">contact@obuildinggroup.com</a></p>
+            <a class="btn ghost" href="https://wa.me/221769204381" target="_blank">WhatsApp</a>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <iframe title="Carte - Saly" src="https://www.google.com/maps?q=Saly%2C%20S%C3%A9n%C3%A9gal&output=embed"
+              loading="lazy"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <div class="logo-sm">O'B</div>
+        <div class="muted">&copy; <span id="year5"></span> O'Building Group</div>
+      </div>
+      <div class="foot-right"><a href="services.html">Services</a><a href="realisations.html">Réalisations</a></div>
+    </div>
+  </footer>
+
+  <script src="./assets/app.js" defer></script>
+  <script>document.getElementById('year5').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

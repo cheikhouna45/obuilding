@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O'Building Group — Réalisations</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">O'B</div>
+        <div class="brand-text"><strong>O'Building Group</strong><span class="muted">BTP • Immobilier</span></div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="realisations.html" class="active">Réalisations</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+        <button id="burger3" class="burger" aria-label="Ouvrir le menu"
+          aria-expanded="false"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+    <div id="mobileMenu3" class="mobile-menu" hidden>
+      <a href="index.html">Accueil</a><a href="services.html">Services</a><a href="realisations.html">Réalisations</a><a
+        href="equipe.html">Équipe</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1>Réalisations</h1>
+      <p class="muted">Filtrez par catégorie ou explorez la galerie complète. Cliquez sur une image pour agrandir.</p>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">Tout</button>
+        <button class="filter" data-filter="residence">Résidentiel</button>
+        <button class="filter" data-filter="commercial">Commercial</button>
+        <button class="filter" data-filter="industriel">Industriel</button>
+      </div>
+
+      <div id="gallery" class="grid gallery">
+        <figure class="gallery-item" data-cat="residence"><img
+            src="./assets/images/5587178396dba18c2ab7f590a0d91f7f.jpg"
+            alt="Villa Saly">
+          <figcaption>Villa Saly</figcaption>
+        </figure>
+        <figure class="gallery-item" data-cat="industriel"><img
+            src="./assets/images/8693a90933ae608b35cd305ea0a5c01f.jpg"
+            alt="Entrepôt">
+          <figcaption>Entrepôt Industriel</figcaption>
+        </figure>
+        <figure class="gallery-item" data-cat="commercial"><img
+            src="./assets/images/9c47e12eebdc35bf00ca23246ea06371.jpg"
+            alt="Showroom">
+          <figcaption>Showroom</figcaption>
+        </figure>
+        <figure class="gallery-item" data-cat="residence"><img
+            src="./assets/images/094935004fe94d7fc940504e7cfb6919.jpg"
+            alt="Maison">
+          <figcaption>Maison - Aménagement</figcaption>
+        </figure>
+        <figure class="gallery-item" data-cat="commercial"><img
+            src="./assets/images/cb96190c942affb97c06df2f7b6f52da.jpg"
+            alt="Bureaux">
+          <figcaption>Immeuble de bureaux</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <div class="logo-sm">O'B</div>
+        <div class="muted">&copy; <span id="year3"></span> O'Building Group</div>
+      </div>
+      <div class="foot-right"><a href="contact.html">Contact</a><a href="services.html">Services</a></div>
+    </div>
+  </footer>
+  <script src="./assets/app.js" defer></script>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
